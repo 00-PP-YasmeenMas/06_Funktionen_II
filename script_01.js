@@ -8,8 +8,12 @@
 1. Dateneingabe + -überprüfung : 
 2. Auswahl Rechenart : 
 3. Fkt. Grundrechenarten : 
-4. Ausgabe in Konsole : 
+4. Ausgabe in Konsole : check!
 */
+
+
+
+
 
 
 
