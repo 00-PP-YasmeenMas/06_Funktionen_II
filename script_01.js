@@ -5,8 +5,8 @@
 /*
 0. a+b | a-b | a*b | a/b  --> Ergebnis c 
 
-1. Dateneingabe + -überprüfung : 
-2. Auswahl Rechenart : 
+1. Dateneingabe + -überprüfung : check! | ????
+2. Auswahl Rechenart : check!
 3. Fkt. Grundrechenarten : check!
 4. Ausgabe in Konsole : check!
 */
@@ -14,15 +14,29 @@
 const ERROR_STR_DIV = "Division durch 0 nicht";
 const ERROR_STR_GEN = "Irgendwas ging schief!";
 
+
+startApp();
+function startApp() {
+	output(calculator(getNum(),getNum(),getOp()));
+}
+
+function getNum() {
+	return parseInt(prompt("Zahl?")); 
+}
+
+function getOp() {
+	return prompt("Operator?");
+}
+
 // module: calculator | tests:
 // agreement : "+","-","*",":","/"
-output(calculator(3,2,"+"));
-output(calculator(3,2,"-"));
-output(calculator(3,2,"*"));
-output(calculator(3,2,":"));
-output(calculator(3,2,"/"));
-output(calculator(3,0,"/"));
-output(calculator(3,2,"#?!"));
+// output(calculator(3,2,"+"));
+// output(calculator(3,2,"-"));
+// output(calculator(3,2,"*"));
+// output(calculator(3,2,":"));
+// output(calculator(3,2,"/"));
+// output(calculator(3,0,"/"));
+// output(calculator(3,2,"#?!"));
 function calculator(a,b,op) {
 	switch (op) {
 		case "+":
@@ -39,11 +53,6 @@ function calculator(a,b,op) {
 			return ERROR_STR_GEN;
 	}
 }
-
-
-
-
-
 
 // module: division a / b |  test:
 // output(divide(4,2));
