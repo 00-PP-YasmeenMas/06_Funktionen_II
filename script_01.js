@@ -15,18 +15,18 @@ const ERROR_STR_DIV = "Division durch 0 nicht";
 const ERROR_STR_GEN = "Irgendwas ging schief!";
 
 
-startApp();
-function startApp() {
-	output(calculator(getNum(),getNum(),getOp()));
-}
+// startApp();
+// function startApp() {
+// 	output(calculator(getNum(),getNum(),getOp()));
+// }
 
-function getNum() {
-	return parseInt(prompt("Zahl?")); 
-}
+// function getNum() {
+// 	return parseInt(prompt("Zahl?")); 
+// }
 
-function getOp() {
-	return prompt("Operator?");
-}
+// function getOp() {
+// 	return prompt("Operator?");
+// }
 
 // module: calculator | tests:
 // agreement : "+","-","*",":","/"
